@@ -1,0 +1,36 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /content/hagrid_120k  # dataset root dir
+train: images/train # train images (relative to 'path') 118287 images
+val: images/train  # val images (relative to 'path') 5000 images
+test: 
+
+# Classes
+names:
+  0: call
+  1: dislike
+  2: fist
+  3: four
+  4: like
+  5: mute
+  6: ok
+  7: one
+  8: palm
+  9: peace
+  10: peace_inverted
+  11: rock
+  12: stop
+  13: stop_inverted
+  14: three
+  15: three3
+  16: two_up
+  17: two_up_inverted
+  18: no_gesture
